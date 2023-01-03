@@ -1,0 +1,6 @@
+#!/bin/bash
+mkdir /tmp/OLESIA_
+touch /tmp/OLESIA_/file.txt
+date >> /tmp/OLESIA_/file.txt
+echo "it works!" >> /tmp/OLESIA_/file.txt
+cp /tmp/OLESIA_/file.txt /opt
