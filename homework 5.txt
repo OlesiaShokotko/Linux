@@ -1,0 +1,5 @@
+   0 nano script.sh
+   1 chmod 744 script.sh
+   2 alias my_script='bash /root/script.sh'
+   3 my_script
+   4 history >> /tmp/history.txt
