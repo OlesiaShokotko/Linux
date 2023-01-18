@@ -1,0 +1,5 @@
+   0 echo -e 'echo "Hello student!"\n echo "Enter your name: "\n read $name\n echo "Welcome to terminal $name!"\n mkdir -p /tmp/test/\n date +"%H:%M:%S" > /tmp/test/mydate.txt\n echo "Сохраняем данные"\n for run in {1..10}\n do\n echo $run\n sleep 0.5\n done\n echo "Data saved. Continue work"\n df -h >> /tmp/test/mydate.txt\n mkdir -p /opt/mydate\n cp /tmp/test/mydate.txt /opt/mydate/newmydate.txt\n for run in {1..5}\n do\n echo $run\n sleep 1\n done\n echo "Well done, Boss"' > fullscript.sh  
+   1 chmod 744 fullscript.sh 
+   2 alias fullscript='bash /root/fullscript.sh'
+   3 fullscript
+   4 history >> /tmp/history.txt
