@@ -1,0 +1,12 @@
+#!/bin/bash
+DATE=$(date +"%d%m%y")
+
+for temp in {1..10}
+do
+touch /opt/45_46_morning/olesia_shokotko/testScript/$temp.$DATE.txt
+done
+
+chmod 744 taskOlesia.sh
+crontab -e
+15 * * * * /opt/45_46_morning/olesia_shokotko/taskOlesia.sh
+crontab -r
